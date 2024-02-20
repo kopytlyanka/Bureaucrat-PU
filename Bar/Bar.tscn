@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy70bfdqylqu2"]
+
+[ext_resource type="Texture2D" uid="uid://b2wt5s1kkiiut" path="res://Bar/Bar.png" id="1_3cbdo"]
+[ext_resource type="Script" path="res://Bar/Bar.gd" id="1_ma8xf"]
+
+[node name="Bar" type="Node2D"]
+script = ExtResource("1_ma8xf")
+color = Color(1, 1, 1, 1)
+
+[node name="Bar" type="Sprite2D" parent="."]
+texture = ExtResource("1_3cbdo")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-145, -15)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -64.0
+offset_top = -15.0
+offset_right = 64.0
+offset_bottom = 16.0

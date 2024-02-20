@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://d2ahod4fhlfuw"]
+
+[ext_resource type="PackedScene" uid="uid://cqaya5a5knp23" path="res://Bureucrat/Bureaucrat.tscn" id="1_53vqq"]
+[ext_resource type="Script" path="res://Game.gd" id="1_twgi3"]
+[ext_resource type="PackedScene" uid="uid://dy70bfdqylqu2" path="res://Bar/Bar.tscn" id="2_mhy4f"]
+[ext_resource type="Texture2D" uid="uid://bwv338mnb5r30" path="res://Bar/mood.png" id="3_lr5rg"]
+[ext_resource type="Texture2D" uid="uid://domxfbxqjsv0x" path="res://Bar/healh.png" id="3_lrfp6"]
+[ext_resource type="Texture2D" uid="uid://dp15des2bht0a" path="res://Bar/hunger.png" id="5_cey7u"]
+[ext_resource type="Texture2D" uid="uid://c06flj4t4cix6" path="res://Bar/loyalty.png" id="6_webk1"]
+[ext_resource type="Texture2D" uid="uid://ds61dwauifyn1" path="res://Bar/approval.png" id="7_hv7be"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_twgi3")
+
+[node name="Bureaucrat" parent="." instance=ExtResource("1_53vqq")]
+position = Vector2(312, 480)
+scale = Vector2(1.2, 1.2)
+
+[node name="Bar" parent="." instance=ExtResource("2_mhy4f")]
+position = Vector2(196, 57)
+color = Color(0, 1, 0, 1)
+icon = ExtResource("3_lr5rg")
+icon_scale = 0.07
+loss = 1.0
+
+[node name="Bar2" parent="." instance=ExtResource("2_mhy4f")]
+position = Vector2(196, 128)
+color = Color(1, 0, 0, 1)
+icon = ExtResource("3_lrfp6")
+icon_scale = 0.12
+loss = 1.0
+
+[node name="Bar3" parent="." instance=ExtResource("2_mhy4f")]
+position = Vector2(196, 200)
+color = Color(1, 0.517647, 0, 1)
+icon = ExtResource("5_cey7u")
+icon_scale = 0.15
+loss = 1.0
+
+[node name="Bar4" parent="." instance=ExtResource("2_mhy4f")]
+position = Vector2(196, 272)
+color = Color(1, 0, 1, 1)
+icon = ExtResource("6_webk1")
+icon_scale = 0.1
+loss = 1.0
+
+[node name="Bar5" parent="." instance=ExtResource("2_mhy4f")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(196, 344)
+color = Color(1, 1, 0, 1)
+icon = ExtResource("7_hv7be")
+icon_scale = 0.04
+loss = 1.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 389.0
+offset_top = 42.0
+offset_right = 576.0
+offset_bottom = 248.0
+vertical_alignment = 1

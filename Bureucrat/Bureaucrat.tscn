@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqaya5a5knp23"]
+
+[ext_resource type="Texture2D" uid="uid://co263nofktfwn" path="res://Bureucrat/icon.svg" id="1_ycwl3"]
+[ext_resource type="Texture2D" uid="uid://cvs6ueobraq6y" path="res://Bureucrat/torso.png" id="2_2xegd"]
+
+[node name="Bureaucrat" type="Node2D"]
+
+[node name="Head" type="Sprite2D" parent="."]
+texture = ExtResource("1_ycwl3")
+
+[node name="Torso" type="Sprite2D" parent="."]
+position = Vector2(-11, 195)
+scale = Vector2(0.351403, 0.351403)
+texture = ExtResource("2_2xegd")
